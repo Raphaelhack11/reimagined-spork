@@ -6,21 +6,23 @@ export default function Landing() {
     <section className="card">
       <div className="landing">
         <div className="landing-text">
-          <h2>Welcome to AxosBank</h2>
+          <h2>Secure Digital Banking, Evolved.</h2> {/* Stronger headline */}
           <p>
-            This is an **Axos banking dashboard** — interactive signup,
-            login, and balance pages. All data is stored locally.
+            Experience **AxosBank's** seamless and secure platform. Manage your finances,
+            view balances instantly, and take control of your future—all in one place.
           </p>
           <div className="btn-group">
-            <Link to="/signup" className="btn-primary">Create Account</Link>
-            <Link to="/login" className="btn-secondary">Login</Link>
+            <Link to="/signup" className="btn-primary">Open a Free Account</Link> {/* Stronger Call-to-Action */}
+            <Link to="/login" className="btn-secondary">Log In to My Account</Link> {/* Clearer Login CTA */}
           </div>
         </div>
 
         <div className="balance-card">
-          <h3>Account Balance</h3>
-          <p className="balance"></p> 
-          <p className="note"></p>
+          <h3>Your Financial Future Starts Here</h3> {/* Professional subheading */}
+          <p className="balance">
+            {/* The balance remains blank as per your previous instruction */}
+          </p>
+          <p className="note">FDIC Insured. Bank with Confidence.</p> {/* Focus on security/trust */}
         </div>
       </div>
     </section>
