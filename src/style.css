@@ -1,4 +1,4 @@
-body {
+Body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to right, #f8faff, #e9f2ff);
@@ -164,4 +164,26 @@ body {
 
 .center {
   text-align: center;
+}
+
+/* --- MOBILE FRIENDLY HEADER FIX --- */
+@media (max-width: 600px) {
+  .header {
+    /* Stack items vertically */
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 10px; /* Adjust padding for small screens */
+  }
+
+  /* Make sure the nav buttons are spaced out */
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* Ensure the buttons don't have excessive left margin that pushes them over */
+  .nav-btn {
+    margin-left: 0;
+  }
 }
