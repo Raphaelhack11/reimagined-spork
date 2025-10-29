@@ -8,7 +8,7 @@ export default function Landing() {
         <div className="landing-text">
           <h2>Welcome to AxosBank</h2>
           <p>
-            This is a banking dashboard — interactive signup,
+            This is a demonstration banking dashboard — interactive signup,
             login, and balance pages. All data is stored locally.
           </p>
           <div className="btn-group">
@@ -22,7 +22,7 @@ export default function Landing() {
           <p className="balance">$806,839.06</p>
           <p className="note">Demo balance (read-only)</p>
         </div>
-      </div
+      </div>
     </section>
   );
 }
