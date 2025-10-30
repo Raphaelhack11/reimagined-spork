@@ -27,25 +27,37 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* 2. Visual Elements Section (Option B) */}
+      {/* 2. Visual Elements Section (Now with Icon Features) */}
       <section style={{ textAlign: 'center', marginTop: '40px' }}>
         <h3>Banking Designed for Your Life 📱</h3>
         <p className="note" style={{ marginBottom: '20px' }}>Manage your finances anytime, anywhere.</p>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
           
-          {/* Image 1: Mobile Banking */}
-          <div style={{ width: '250px', height: '180px', borderRadius: '10px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', overflow: 'hidden' }}>
-            [attachment_0](attachment)
+          {/* Feature 1: Mobile First */}
+          <div style={{ width: '250px', height: '180px', padding: '20px', background: 'white', borderRadius: '10px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+            <div className="logo-icon" style={{ marginBottom: '10px', width: '50px', height: '50px', fontSize: '1.2rem' }}>
+              <span role="img" aria-label="phone">📱</span> 
+            </div>
+            <h4 style={{ color: '#007bff', margin: '0 0 5px 0' }}>Mobile First</h4>
+            <p className="note">Access your accounts 24/7 from any device.</p>
           </div>
           
-          {/* Image 2: Secure Transactions */}
-          <div style={{ width: '250px', height: '180px', borderRadius: '10px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', overflow: 'hidden' }}>
-            [attachment_1](attachment)
+          {/* Feature 2: Advanced Security */}
+          <div style={{ width: '250px', height: '180px', padding: '20px', background: 'white', borderRadius: '10px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+            <div className="logo-icon" style={{ marginBottom: '10px', width: '50px', height: '50px', fontSize: '1.2rem' }}>
+              <span role="img" aria-label="lock">🔒</span> 
+            </div>
+            <h4 style={{ color: '#007bff', margin: '0 0 5px 0' }}>Advanced Security</h4>
+            <p className="note">Industry-leading encryption protects your funds.</p>
           </div>
           
-          {/* Image 3: Financial Planning */}
-          <div style={{ width: '250px', height: '180px', borderRadius: '10px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', overflow: 'hidden' }}>
-            
+          {/* Feature 3: Grow Your Wealth */}
+          <div style={{ width: '250px', height: '180px', padding: '20px', background: 'white', borderRadius: '10px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+            <div className="logo-icon" style={{ marginBottom: '10px', width: '50px', height: '50px', fontSize: '1.2rem' }}>
+              <span role="img" aria-label="chart">📈</span> 
+            </div>
+            <h4 style={{ color: '#007bff', margin: '0 0 5px 0' }}>Grow Your Wealth</h4>
+            <p className="note">Tools and offers for every financial goal.</p>
           </div>
         </div>
       </section>
