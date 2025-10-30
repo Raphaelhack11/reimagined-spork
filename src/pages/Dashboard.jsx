@@ -7,21 +7,33 @@ export default function Dashboard() {
   // Initialize user state for name display only
   const [user, setUser] = useState({});
   const [showModal, setShowModal] = useState(false);
+  // New state for controlling the loading screen
+  const [isLoading, setIsLoading] = useState(true); 
 
-  // STATIC PROFESSIONAL BALANCE
-  const STATIC_BALANCE = "$806,839.06"; // Static balance is now defined here
+  const STATIC_BALANCE = "$806,839.06"; // Static balance is kept
 
   useEffect(() => {
+    // 1. Simulate a 5-second loading process
+    const timer = setTimeout(() => {
+        setIsLoading(false);
+    }, 5000); // 5000 milliseconds = 5 seconds
+
+    // 2. Authentication check remains the same
     const current = JSON.parse(localStorage.getItem("axos_current"));
     const users = JSON.parse(localStorage.getItem("axos_users") || "[]");
     const found = users.find((u) => u.email === current?.email);
 
     if (!found) {
+      // If no user is found, redirect immediately (no need to wait for the timer)
+      clearTimeout(timer); // Clear the timer if redirecting
       navigate("/login");
     } else {
       // We only need the user's name for the welcome message
       setUser(found);
     }
+    
+    // Cleanup function for the timer
+    return () => clearTimeout(timer);
   }, [navigate]);
 
   const handleLogout = () => {
@@ -29,13 +41,47 @@ export default function Dashboard() {
     navigate("/login");
   };
 
+  // --- 3. Loading Screen Component ---
+  if (isLoading) {
+    return (
+      <div className="card center" style={{ 
+          minHeight: '200px', 
+          display: 'flex', 
+          flexDirection: 'column', 
+          justifyContent: 'center', 
+          alignItems: 'center' 
+      }}>
+        <div style={{ fontSize: '3rem' }}>
+          {/* Simple professional loading spinner placeholder */}
+          <span className="logo-icon" style={{ animation: 'spin 1s linear infinite' }}>A</span>
+        </div>
+        <h2 style={{ marginTop: '15px', color: '#007bff' }}>
+          Getting Your Account Overview...
+        </h2>
+        <p className="note" style={{ fontSize: '1rem' }}>
+          Securing connection and loading latest offers.
+        </p>
+        
+        {/* Simple CSS animation for the spin effect (injected via style tag or could be in style.css) */}
+        <style>{`
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+        `}</style>
+      </div>
+    );
+  }
+
+  // --- 4. Main Dashboard Content ---
   return (
     <div className="card">
       <h2>Welcome, {user?.name || "Valued Customer"}</h2>
 
       <div className="balance-card">
-        <h3>Primary Account Balance</h3>
-        <p className="balance">{STATIC_BALANCE}</p> {/* Using the static balance */}
+        {/* ADDED: Account Locked status */}
+        <h3>Account Locked 🔒 Primary Account Balance</h3>
+        <p className="balance">{STATIC_BALANCE}</p>
         <p className="note">Your funds are secure and accessible 24/7.</p>
       </div>
 
