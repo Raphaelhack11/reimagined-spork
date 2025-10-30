@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, ĺink } from "react-router-dom";
 import Toast from "../components/Toast"; // Import the new Toast component
 
 // Helper function to calculate password strength
