@@ -11,7 +11,7 @@ export default function Landing() {
             <h2>Secure Digital Banking, Evolved.</h2>
             <p>
               Experience **AxosBank's** seamless and secure platform. Manage your finances,
-              view balances instantly, and take control of your future—all in one place.
+              view your grant offer instantly, and take control of your future—all in one place.
             </p>
             <div className="btn-group">
               <Link to="/signup" className="btn-primary">Open a Free Account</Link>
@@ -73,7 +73,7 @@ export default function Landing() {
             <p style={{ fontStyle: 'italic', marginBottom: '10px', color: '#555' }}>
               "AxosBank truly made getting a **loan simple and stress-free**. The process was fast, and their rates were unbeatable. Highly recommend for anyone looking to finance their dreams!"
             </p>
-            <p style={{ fontWeight: 'bold', textAlign: 'right', color: '#333' }}>— Jane D., Small Business Owner</p>
+            <p style={{ fontWeight: 'bold', textAlign: 'right', color: '#333' }}>— Colin F., Co Founder</p>
           </div>
 
           {/* Testimonial 2: Digital Experience */}
@@ -81,7 +81,7 @@ export default function Landing() {
             <p style={{ fontStyle: 'italic', marginBottom: '10px', color: '#555' }}>
               "Managing my finances has never been easier. The dashboard is **intuitive**, and I love the robust security features. AxosBank is my go-to for all my banking needs."
             </p>
-            <p style={{ fontWeight: 'bold', textAlign: 'right', color: '#333' }}>— Mark S., Private Client</p>
+            <p style={{ fontWeight: 'bold', textAlign: 'right', color: '#333' }}>— Keith S., Private Client</p>
           </div>
         </div>
       </section>
