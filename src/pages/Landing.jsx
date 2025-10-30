@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 export default function Landing() {
   return (
     <div className="container">
-      {/* 1. Main Hero Card */}
-      <section className="card">
+      {/* 1. Main Hero Section - CARD CLASS REMOVED HERE */}
+      <section> 
         <div className="landing">
           <div className="landing-text">
             <h2>Secure Digital Banking, Evolved.</h2>
@@ -31,6 +31,7 @@ export default function Landing() {
       <section style={{ textAlign: 'center', marginTop: '40px' }}>
         <h3>Banking Designed for Your Life 📱</h3>
         <p className="note" style={{ marginBottom: '20px' }}>Manage your finances anytime, anywhere.</p>
+        {/* ... (Feature icons code remains unchanged) ... */}
         <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
           
           {/* Feature 1: Mobile First */}
@@ -62,7 +63,7 @@ export default function Landing() {
         </div>
       </section>
       
-      {/* 3. Testimonials Section */}
+      {/* 3. Testimonials Section - CARD CLASS REMAINS HERE */}
       <section className="card" style={{ marginTop: '40px', padding: '30px', background: '#f8faff' }}>
         <h3 style={{ textAlign: 'center', marginBottom: '30px', fontSize: '1.8rem', color: '#007bff' }}>
           What Our Customers Say 💬
