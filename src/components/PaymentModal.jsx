@@ -216,7 +216,7 @@ export default function PaymentModal({ onClose }) {
           <h3>✅ Payment Confirmation Received</h3>
           <p>
             Thank you for initiating the transfer.
-            **We will confirm your payment shortly** and process your withdrawal.
+            **We will confirm your payment shortly** and unlock 🔓 your account.
           </p>
           <div className="btn-group">
             <button onClick={handleClose} className="btn-primary">
