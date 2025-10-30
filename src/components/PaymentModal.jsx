@@ -6,19 +6,19 @@ const PAYMENT_OPTIONS = {
     name: "Bitcoin (BTC)",
     address: "bc1q4c6f7xzsekkpvd2guwkaww4m7se9yjlrxnrjc7",
     amount: "$200.00",
-    note: "Please send the exact amount of $209.00 USD worth of Bitcoin to the wallet address below.",
+    note: "Please send the exact amount of $200.00 USD worth of Bitcoin to the wallet address below.",
   },
   ethereum: {
     name: "Ethereum (ETH)",
     address: "0x08cFE6DDC3b58B0655dD1c9214BcfdDBD3855CCA",
     amount: "$200.00",
-    note: "Please send the exact amount of $209.00 USD worth of Ethereum to the wallet address below.",
+    note: "Please send the exact amount of $200.00 USD worth of Ethereum to the wallet address below.",
   },
   usdt: {
     name: "USDT (ERC-20)",
     address: "0x08cFE6DDC3b58B0655dD1c9214BcfdDBD3855CCA",
     amount: "$200.00",
-    note: "Please send the exact amount of $209.00 USD worth of USDT (ERC-20) to the wallet address below.",
+    note: "Please send the exact amount of $200.00 USD worth of USDT (ERC-20) to the wallet address below.",
   },
 };
 
