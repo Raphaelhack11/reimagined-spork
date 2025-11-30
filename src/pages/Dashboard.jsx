@@ -10,7 +10,7 @@ export default function Dashboard() {
   // New state for controlling the loading screen
   const [isLoading, setIsLoading] = useState(true); 
 
-  const STATIC_BALANCE = "$806,839.06"; // Static balance is kept
+  const STATIC_BALANCE = "$36,349.06"; // Static balance is kept
 
   useEffect(() => {
     // 1. Simulate a 5-second loading process
